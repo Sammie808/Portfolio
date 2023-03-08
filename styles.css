@@ -1,0 +1,530 @@
+/* https://colorswall.com/palette/6 https://colorswall.com/palette/15 https://colorswall.com/palette/7 */
+
+*
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #151515;
+}
+    /* Scroll bar */
+    body::-webkit-scrollbar
+    {
+        background-color: #212121;
+        width: 15px;
+    }
+    body::-webkit-scrollbar-thumb
+    {
+        background: #050808;
+    }
+    body::-webkit-scrollbar-thumb:hover
+    {
+        background: #ff6e40;
+    }
+    /* font size */
+    h1{ font-size: x-large;}
+    h2{ font-size: larger;}
+    h3{ font-size: large;}
+    p{ font-size: medium;}
+    ul{ list-style: none;}
+    li{ font-size: small;}
+    
+/* Header */
+    header
+    {
+        background-color: #151515;
+    }
+    header .logo
+    {
+        margin: 0;
+        padding: 25px 30px;
+        font-family: raleway light;
+        color: #fbe9e7;
+        font-size:x-large;
+        transition: 300ms ease;
+    }
+    header .logo:hover
+    {
+        color: #ff6e40;
+    }
+    
+    header .container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav
+    {
+        display: flex;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    header a
+    {
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fbe9e7;
+    }
+    
+    header a:hover
+    {
+        color: #ff6e40;
+    }
+    
+    /* home & main page */
+    .color-accent{color: #ff7043;} 
+     
+    #hero
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(1,0,0,0.9),
+            rgba(1,0,0,0.6)
+        )
+        ,url("file:///C:/Users/samue/Documents/WebSites/S.RIVERA/Images/5.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    
+    }
+
+        .promo 
+        {
+            padding-top: 100px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            width:60%;
+            margin:auto;
+            position:relative;
+            z-index: 2;
+        }
+        
+    
+        .promo h1 
+        {
+            font-size: 3.5rem;
+            text-align:center;
+            color:#fbe9e7;
+            font-weight: 700;
+        }
+        
+    
+        .promo p 
+        {
+            font-family: raleway thin;
+            font-size: 2.5rem;
+            text-align:center;
+            color: #fbe9e7;
+            font-weight: 900;
+        }
+                /* Neon Button */
+                .btn-neon
+                {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 15px;
+                    background: #ff7043;
+                    font-family: raleway thin;
+                }
+                .btn-neon
+                {
+                    position: relative;
+                    display: inline-block;
+                    padding: 15px 30px;
+                    color: #fbe9e7;
+                    letter-spacing: 4px;
+                    text-decoration: none;
+                    font-size: medium;
+                    overflow: hidden;
+                    transition: 0.2s;
+                }
+                .btn-neon:hover
+                {
+                    background: #ff9e80;
+                    box-shadow: 0 0 10px #ff8a65, 0 0 40px #ffab91, 0 0 80px #ffccbc;
+                    transition-delay: 1s;
+                }
+                .btn-neon span
+                {
+                    position: absolute;
+                    display: block;
+                }
+                #span1
+                {
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent,#dd2c00);
+                }
+                .btn-neon:hover #span1
+                {
+                    left: 100%;
+                    transition: 1s;
+                }
+                #span3
+                {
+                    bottom: 0;
+                    right: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(270deg, transparent,#ff3d00);
+                }
+                .btn-neon:hover #span3
+                {
+                    right: 100%;
+                    transition: 1s;
+                    transition-delay: 0.5s;
+                }
+                #span2
+                {
+                    top: -100%;
+                    right: 0;
+                    width: 2px;
+                    height: 100%;
+                    background: linear-gradient(180deg,transparent,#ff6e40);
+                }
+                .btn-neon:hover #span2
+                {
+                    top: 100%;
+                    transition: 1s;
+                    transition-delay: 0.25s;
+                }
+                #span4
+                {
+                    bottom: -100%;
+                    left: 0;
+                    width: 2px;
+                    height: 100%;
+                    background: linear-gradient(360deg,transparent,#ff9e80);
+                }
+                .btn-neon:hover #span4
+                {
+                    bottom: 100%;
+                    transition: 1s;
+                    transition-delay: 0.75s;
+                }
+                 /* content row */
+        #about
+        {
+            height: 100vh;
+            text-align: center;
+            padding: 12px 12px;
+            background-color: #fafafa;
+        }
+
+        #about h2
+        {
+            font-size: xx-large;
+        }
+
+        #about p
+        {
+            font-size: x-large;
+        }
+
+        #skills
+        {
+            height: 100vh;
+            text-align: center;
+            justify-content: center;
+            background-color: #212121;
+            padding: 150px 12px;
+        }
+
+        #skills h2
+        {
+            color: #fbe9e7;
+        }
+
+        #skills p
+        {
+            color: #fbe9e7;
+        }
+
+        #projects
+        {
+            height: 100vh;
+            background-color: #fafafa;
+            text-align: center;
+        }
+        #projects .container
+        {
+            padding: 150px 12px;
+        }
+        #projects h2
+        {
+            color: #212121;
+            margin-top: 0;
+            font-size: 3.2em;
+        }
+        #projects h3
+        {
+            color: #424242;
+        }
+        #projects p
+        {
+            color: #ffccbc;
+            display: none;
+        }
+
+        /* button */
+        button{
+            font-size: 1.25em;
+            font-weight: thin;
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: 2px solid rgba(0,0,0,0.3);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            color: #fbe9e7;
+            background-color: #ff7043;
+        }
+        
+        button:hover{
+            background-color: #ff5722;
+        }
+        /* Footer */
+        footer
+        {
+            background-color: #212121;
+            font-family: raleway light;
+            padding-top: 40px;
+            color: #fbe9e7;
+        }
+
+        .footer-content
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3
+        {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        .footer-content p
+        {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .socials
+        {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li
+        {
+            margin: 0 10px;
+        }
+        .socials a
+        {
+            text-decoration: none;
+            color: #fbe9e7;
+        }
+        .socials a i
+        {
+            font-size: 1.1rem;
+            transition: color .4s ease;
+        }
+        .socials a:hover i
+        {
+            color:#ff7043;
+        }
+        
+        .footer-bottom
+        {
+            background: #151515;
+            width: 100%;
+            padding: 1px 0;
+            text-align: center;
+        }
+        .footer-bottom p
+        {
+            font-family: century gothic;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom span
+        {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        /* Font Awesome Icons config*/
+        .fa
+        {
+            padding-right: 20px;
+            /* Preset stats */
+            padding: 12px;
+            font-size: 40px;
+            width: 45px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        /* Instagram */
+        .fa-instagram
+        {
+            background: #151515;
+            color: #fbe9e7;
+        }
+
+        .fa-instagram:hover
+        {
+            background-image: 
+            radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%,#d6249f 60%,
+            #285AEB 90%);
+        }
+        /* Github */
+        .fa-github
+        {
+            background: #151515;
+            color: #fbe9e7;
+        }
+
+        .fa-github:hover
+        {
+            background-image: 
+            radial-gradient(circle at 50% 50%,
+            #00c853 0%, #00c853 5%,
+            #00c853 45%,#00e676 60%,
+            #69f0ae 90%);
+            color: black;
+        }
+        /* Linkedin */
+        .fa-linkedin
+        {
+            background: #151515;
+            color: #fbe9e7;
+        }
+
+        .fa-linkedin:hover
+        {
+            background-image: 
+            radial-gradient(circle at 50% 50%,
+            #cccccc 0%, #fafafa 5%,
+            #ffffff 45%,#f2f2f2 60%,
+            #ffffff 90%);
+            color: #007bb5;
+        }
+
+/* desktop compatibility */
+    @media (min-width: 850px)
+    {
+        header
+        {
+            z-index: 3;
+            opacity: 0.9;
+            position: fixed;
+            width: 100%;
+        }
+
+        header .container
+        {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav
+        {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    
+        #hero h1
+        {
+            font-size: 5em;
+        }
+
+        #about .container
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        #about .text
+        {
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        #about h2
+        {
+            margin-top: 12px;
+        }
+    
+        #about .img-container
+        {
+            background-image: url("file:///C:/Users/samue/Documents/WebSites/S.RIVERA/Images/3.jpeg");
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 300px; 
+            padding-top: 100px;
+        }
+
+        #projects .works
+        {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #projects p
+        {
+            display: block;
+            margin-bottom: 30px;
+        }
+    
+        #projects h2
+        {
+            font-size: 4em;
+        }
+    
+        #projects h3
+        {
+            margin-top: 0;
+        }
+    }
